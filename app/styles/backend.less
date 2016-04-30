@@ -1,0 +1,31 @@
+@import "variables";
+
+#backend-wrapper {
+  background-color: #fff;
+
+  header {
+    padding: 20px;
+    background-color: inherit;
+    height: auto;
+  }
+
+  .page-header {
+    @media (max-width: @screen-xs-max) {
+      margin-left: @app-side-padding-mobile;
+      margin-right: @app-side-padding-mobile;
+    }
+    @media (min-width: @screen-sm-min) {
+      margin-left: @app-side-padding;
+      margin-right: @app-side-padding;
+    }
+  }
+
+  .section {
+    padding-bottom: 30px;
+    padding-top: 50px;
+
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "server": {
+    "prodPort": 8080,
+    "devPort": 8080,
+    "path": "server",
+    "modules": [
+      {"module": "static", "file": "modules/static"},
+      {"module": "translations", "file": "modules/translations"},
+      {"module": "angular", "file": "modules/angular"}
+    ],
+    "extensions": [
+    ]
+  },
+  "translations": {
+    "path": "../app/misc/i18n"
+  }
+}
