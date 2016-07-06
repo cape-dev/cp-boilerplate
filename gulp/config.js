@@ -74,8 +74,13 @@ module.exports = {
   },
 
   'views': {
+    'cache': {
+      'watch': [
+        'app/js/**/*.cache.html'
+      ]
+    },
     'watch': [
-      'app/js/**/*.cache.html'
+      'app/index.html'
     ],
     'src': 'app/js/**/*.html',
     'dest': 'app/js'
@@ -121,7 +126,6 @@ module.exports = {
   'lint': {
     'src' : [
       'app/js/**/*.js',
-      'app/js/**/*.es6',
       '!app/js/templatecache.js',
       'server/modules/*',
       'server/extensions/**/*',

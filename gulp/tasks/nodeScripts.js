@@ -1,7 +1,7 @@
 'use strict';
 
-var config         = require('../config');
-var gulp        = require('gulp');
+var config = require('../config');
+var gulp = require('gulp');
 var preprocess = require('gulp-preprocess');
 
 gulp.task('nodeScripts', function() {
@@ -16,5 +16,4 @@ gulp.task('nodeScripts', function() {
   // copy all node scripts to the build folder
   return gulp.src(config.nodeScripts.src)
     .pipe(gulp.dest(config.nodeScripts.dest));
-
 });

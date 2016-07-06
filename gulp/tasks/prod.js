@@ -12,5 +12,4 @@ gulp.task('prod', ['clean'], function(cb) {
 
   runSequence('bootstrap', 'flagIcon', 'nodeScripts', 'styles', 'images',
     'views', 'misc', 'templateCache', 'preprocess', 'browserify', 'server', cb);
-
 });

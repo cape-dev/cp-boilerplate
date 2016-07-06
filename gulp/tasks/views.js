@@ -10,5 +10,4 @@ gulp.task('views', function() {
   return gulp.src('app/index.html')
     .pipe(gulp.dest(config.dist.root))
     .pipe(livereload());
-
 });
